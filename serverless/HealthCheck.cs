@@ -95,7 +95,7 @@ namespace serverless
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            var symptoms = new string[] { "Hair loss", "Internal bleeding", "Temporary blindness", "Ennui" };
+            var symptoms = new string[] {"Internal bleeding", "Temporary blindness", "Ennui" };
 
             Humongous.Healthcare.Models.HealthCheck hc = new Humongous.Healthcare.Models.HealthCheck();
             hc.id = Guid.NewGuid().ToString();
